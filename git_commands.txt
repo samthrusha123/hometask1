@@ -1,0 +1,86 @@
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git init
+Initialized empty Git repository in C:/Users/samthrusha reddy/EPAM/.git/
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ touch add.py
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        add.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git add add.py
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   add.py
+
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git commit -m "Created a simple Flask Applicaton"
+[master (root-commit) 10bdf78] Created a simple Flask Applicaton
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 add.py
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git config --global user.name "samthrusha@123"
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git config --global user.email "kuppireddygarisamthrusha@gmail.com"
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git remote add origin https://github.com/samthrusha123/hometask1.git
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$  git push --set-upstream origin master
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 33.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/samthrusha123/hometask1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+samthrusha reddy@Samthrusha MINGW64 ~/EPAM (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
